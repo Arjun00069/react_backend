@@ -2,7 +2,7 @@
 import { asyncError } from "../middleware/errorMiddleware.js";
 import {Hospital} from "../models/Hospitl.js"
 import jwt from "jsonwebtoken";
-import ErrorHandler from "../Utils/ErrorHandler.js";
+import ErrorHandler from "../utils/errorhandler.js";
 import { log } from "debug/src/browser.js";
 import { User } from "../models/userModel.js";
 // import redisClient from "../utils/redisClient.js";
