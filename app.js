@@ -25,21 +25,8 @@ import  hospitalroutes from "./routes/hospitalRoutes.js"
 import { errorMiddleware } from './middleware/errorMiddleware.js';
 //Third party middleware
 app.use(cors({
-  credentials: true,
-  origin: (origin, callback) => {
-    // Allow requests from any origin when credentials are not present
-    if (!origin) return callback(null, true);
-
-    // Check if the origin is allowed
-    // Add the allowed origin(s) here
-    const allowedOrigins = ['http://localhost:3000', 'https://react-frontend-hazel.vercel.app',"*"];
-
-    if (allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error('Not allowed by CORS'));
-    }
-  },
+  credentials:true,
+  origin: 'https://react-frontend-6zg1zzktr-arjuns-projects-8ab9bf63.vercel.app',
   methods: ["GET", "POST", "PUT", "DELETE", "PATCH"]
 }));
   //Router MIddleware
